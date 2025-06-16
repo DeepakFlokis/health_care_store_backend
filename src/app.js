@@ -17,8 +17,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 const authRouter = require("./routes/auth");
+const productRouter = require("./routes/productRoute");
 
 app.use("/", authRouter);
+app.use("/", productRouter);
 
 const server = http.createServer(app);
 
