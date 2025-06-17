@@ -35,6 +35,10 @@ const userSchema = new mongoose.Schema(
         }
       },
     },
+    mobileNumber: {
+      type: Number,
+      required: true,
+    },
     age: {
       type: Number,
       min: 18,
